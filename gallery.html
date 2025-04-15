@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Gallery - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .car-title {
+            font-size: 1.5em;
+            color: #ff3c3c;
+            text-shadow: 2px 2px 4px black;
+            margin: 10px 0 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Gallery</h1>
-    <nav>
+    <h1 class="animate">Gallery</h1>
+    <nav class="animate">
         <a href="index.html">Home</a> |
         <a href="gallery.html">Gallery</a> |
         <a href="blog.html">Blog</a> |
         <a href="contact.html">Contact</a>
     </nav>
     <hr>
-    <p>Kumpulan foto-foto:</p>
-    <img src="Gambar\ferrari-sf-25.webp" width=700 alt="Foto 1"><br>
-    <br> <img src="Gambar\red-bull-racing-rb21.webp" width=700 alt="Foto 2"><br> 
-    <br> <img src="Gambar\mclaren-mcl39.webp" width=700 alt="Foto 3">
+    <section class="animate">
+        <p style="text-align:center;">Kumpulan foto mobil F1 dari berbagai tim ternama.</p>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
+            <div style="text-align: center;">
+                <div class="car-title"> Ferrari SF-25</div>
+                <img src="Gambar/ferrari-sf-25.webp" width="700" alt="Ferrari SF-25">
+            </div>
+            <div style="text-align: center;">
+                <div class="car-title"> Red Bull Racing RB21</div>
+                <img src="Gambar/red-bull-racing-rb21.webp" width="700" alt="Red Bull Racing RB21">
+            </div>
+            <div style="text-align: center;">
+                <div class="car-title"> McLaren MCL39</div>
+                <img src="Gambar/mclaren-mcl39.webp" width="700" alt="McLaren MCL39">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
+
